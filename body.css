@@ -1,0 +1,167 @@
+.desapego {
+    background-color: whitesmoke;
+    padding-top: 25px;
+}
+
+.padding-mid{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.exposure {
+    width: 288px;
+    height: 442px;
+}
+
+.img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 221px !important;
+    height: 221px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+    transition: .3s;
+}
+
+.info-wrap {
+    padding: 5px 25px;
+    display: flex;
+}
+
+.info-title-item {
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: 600;    
+}
+
+.title-item {
+    color: #222835;
+    display: block;
+}
+
+.title-item:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.icon {
+    position: relative;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.img-xs {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.text-muted {
+    color: #969696 !important;
+}
+
+.text-muted:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.border-user {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.125);
+}
+
+.interest {
+    top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.bar-int {
+    font-size: 14px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.interest::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 26px;
+    bottom: 0px;
+    margin: auto;
+    height: 1px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.wish-1 {
+    height: 70px;
+    width: 70px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.wish-2 {
+    height: 70px;
+    width: 70px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.wish-3 {
+    height: 70px;
+    width: 70px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wish {
+    height: 100%;
+    width: 100%;
+}
+
+.img-wish:hover {
+    border: solid 2px transparent;
+}
+
+.img-wish-3 {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.wish-3:hover {
+    opacity: 1;
+    
+}
+
+.fa-plus {
+    position: absolute;
+    font-size: 28px !important;
+    color: rgb(114, 107, 107);
+    left: 25px;
+    top: 20px;
+}
+
+.fa-plus:hover {
+    border: solid 1px transparent;
+}

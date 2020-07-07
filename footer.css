@@ -1,0 +1,44 @@
+.footer-copyright {
+    opacity: 0.5;
+}
+
+.sl-f {
+    color: #222835 ;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.list-inline-item .btn-floating .fa {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px !important;
+}
+
+.fa-dribbble {
+    background-color: purple;
+}
+
+.fa-linkedin {
+    background-color: #0e76a8;
+}
+
+.fa-google-plus {
+    background-color: #d34836;
+}
+
+.fa-twitter {
+    background-color: #00acee;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.mx-1 {
+    display: flex;
+}
