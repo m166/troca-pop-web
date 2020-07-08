@@ -20,7 +20,8 @@ input {
 }
 
 .logo {
-    padding: 0px 75px 0px 0px;
+    margin: 0px auto 0px 0px;
+    min-width: 116px;
 }
 
 .fa-search {
@@ -56,14 +57,10 @@ input {
     padding: 10px 5px 10px 50px;
 }
 
-.login {
-    padding: 10px 10px 10px 5px;
-}
-
-
 .active-cyan-2 input.form-control[type=text] {
     width: 550px;
     height: 35px;
+    margin-left: 40px;
 }
 .active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
     border-bottom-color: var(--border-color-focus);
@@ -77,12 +74,6 @@ input {
 
 .carousel-item {
     width: 1200px;
-    height: 350px;
-}
-
-.carousel-3 {
-    width: 1200px;
-    height: 350px;
 }
 
 .d-flex {
@@ -93,6 +84,36 @@ input {
 .margin-busca {
     margin: 0px;
     padding-right: 55px !important;
+    width: 100%;
 }
+
+/* responsive */
+@media(max-width: 1000px) {
+    .active-cyan-2 input.form-control[type=text] {
+        width: 500px;
+    }
+}
+
+@media(max-width: 855px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin: 0px auto 20px 0px;
+    }
+
+    .form-inline {
+        order: 1;
+        width: 100%;
+    }
+
+    .active-cyan-2 input.form-control[type=text] { 
+        width: 100%;
+        margin: 0px;
+    }
+}
+
 
 
