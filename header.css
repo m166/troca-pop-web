@@ -4,7 +4,7 @@
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 input {
@@ -53,8 +53,31 @@ input {
     
 }
 
-.registration {
-    padding: 10px 5px 10px 50px;
+.nav-link {
+    padding: 5px 0px 5px 40px !important;
+    color: black;
+}
+
+.icon-sign {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item {
+    display: flex !important;
+    align-items: center;
+}
+
+.fp-icon, .fp-icon-c {
+    margin-left: auto;
+}
+
+.fp-icon {
+    font-size: 24px !important;
+}
+
+.fp-icon-c {
+    font-size: 20px !important;
 }
 
 .active-cyan-2 input.form-control[type=text] {
@@ -94,7 +117,7 @@ input {
     }
 }
 
-@media(max-width: 855px) {
+@media(max-width: 938px) {
     .flex {
         display: flex;
         flex-wrap: wrap;
@@ -114,6 +137,7 @@ input {
         margin: 0px;
     }
 }
+
 
 
 
