@@ -1,3 +1,6 @@
+* {
+    outline: none;
+}
 .header {
     padding: 15px 0;
     background-color: white;

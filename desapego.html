@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/desapego.css" />
+    <script src="./js/zipcode.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex">
+            <a href="./index.html" class="logo">
+                <img src="imagem/logo_size.png" />
+            </a>
+            <!-- Search form -->
+            <nav id="nav-header-menu">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Minha Conta</a>
+                    <div class="dropdown-menu">
+                        <div class="icon-sign">
+                            <a class="dropdown-item" href="./login.html">Entrar
+                                <i class="fa fa-sign-in fp-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="icon-sign">
+                            <a class="dropdown-item" href="./login.html">Cadastro
+                                <i class="fa fa-user-plus fp-icon-c" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section-main bg padding-y">
+        <div class="container">
+            <h2 class="text-announced">
+                Anunciar
+            </h2>
+        </div>
+        <div class="container">
+            <form class="announced">
+                <div class="subject-box">
+                    <input class="subject" placeholder="Título*">
+                </div>
+                <div class="group-img">
+                    <div class="group-info">
+                        Foto Desapego
+                        <p class="info-group-img">
+                            Adicione a foto
+                        </p>
+                    </div>
+                    <di class="announced-img">
+                        <i class="fa fa-camera" aria-hidden="true"></i>
+                        <span class="box-main-text"> Adicionar foto</span>
+                        <span class="box-info-text"> JPG, GIF e PNG somente</span>
+                    </di>
+                    <div class="group-info">
+                        Fotos Interesse
+                        <p class="info-group-img">
+                            Adicione até
+                            <span class="span-title-number"> 6 fotos</span>
+                        </p>
+                    </div>
+                    <di class="announced-img">
+                        <i class="fa fa-camera" aria-hidden="true"></i>
+                        <span class="box-main-text"> Adicionar foto</span>
+                        <span class="box-info-text"> JPG, GIF e PNG somente</span>
+                    </di>
+                </div>
+                <div class="location-container">
+                    <div class="location-container-title">
+                        Localização
+                    </div>
+                    <div class="custom-textfield-group" id="group-zipcode">
+                        <input class="subject" id="zipcode" name="zipcode" type="text" value="" maxlength="9"
+                            placeholder="CEP*" onblur="pesquisacep(this.value);">
+                        <di id="zipcodeAddressBox" class="zipcode-address-box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a class="zipcode-address" id="zipcodeAddress"></a>
+                        </di>
+                    </div>
+                </div>
+                <div class="location-container">
+                    <div class="location-container-title">
+                        Contato
+                    </div>
+                    <div class="custom-textfield-group">
+                        <input class="subject" placeholder="Tel*">
+                    </div>
+                </div>
+                <div class="info-mandatory-box">
+                    <span class="info-mandatory">
+                        As informações com (*) são obrigaórias
+                    </span>
+                </div>
+            </form>
+            <di class="announced-send-box">
+                <span class="announced-send-info">
+                    Ao publicar você concorda e aceita nossos
+                    <a class="term-link" href="...">
+                        Termos de Uso
+                    </a>
+                    e
+                    <a class="term-link" href="...">
+                        Privacidade
+                    </a>
+                </span>
+                <div class="announced-send-button">
+                    <button class="announced-submit">
+                        Enviar anúncio
+                    </button>
+                </div>
+            </di>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Troca Tudo</h5>
+                    <p>A TT(Troca Tudo) nasceu com a ideia de realizar trocas de itens que você
+                        não deseja mais, diate esse cenário, nós da TT criamos uma plataforma para que
+                        esse processo acontecesse de forma segura e divertida.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sobre</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="..." class="sl-f">Como Anunciar</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f">Parceiros</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f">Políticas</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Produtos</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="..." class="sl-f">Funko Pop</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f"></a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f"></a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Cliente</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="..." class="sl-f">Login</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f">Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f">Ajuda</a>
+                        </li>
+                        <li>
+                            <a href="..." class="sl-f"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <a href="./login.html" class="sl-f">
+                    <h5 class="mb-1">Cadastre-se</h5>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="login.html" class="btn btn-danger btn-rounded">Login!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fa fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fa fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fa fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fa fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fa fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Troca Tudo
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+</body>
+
+</html>

@@ -5,6 +5,14 @@
 
 .padding-des {
     padding-left: 16px;
+    color: #212529;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.padding-des:hover {
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .col-lg-3 {
