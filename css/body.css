@@ -1,4 +1,44 @@
-.desapego {
+.shortcut {
+    align-items: center;
+    display: flex;
+    margin: 5px 0px 30px 0px;
+    border: 1.3px solid rgba(0, 0, 0, 0.125);
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 2rem;
+    justify-content: space-between;
+}
+
+.shortcut .speed-tall{
+    padding: 5px 16px;
+}
+
+.content .shortcut .desapego {
+    color: red;
+    font-weight: 600;
+}
+
+.desapego-int {
+    top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.desapego-int::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 44px;
+    bottom: 0px;
+    margin: auto;
+    height: 3px;
+    width: 90%;
+    background-color: red;
+    border-radius: 30%;
+}
+
+.desapego-color {
     background-color: whitesmoke;
     padding-top: 25px;
 }

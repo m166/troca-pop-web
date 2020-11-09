@@ -1,3 +1,28 @@
+.anunciar {
+    color: red;
+    font-weight: 600;
+}
+
+.anunciar-int {
+    top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.anunciar-int::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 44px;
+    bottom: 0px;
+    margin: auto;
+    height: 3px;
+    width: 90%;
+    background-color: red;
+    border-radius: 30%;
+}
+
 .text-announced {
     padding-left: 16px;
     color: #212529;
@@ -14,6 +39,7 @@
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .announced .subject-box {

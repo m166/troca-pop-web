@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/desapego.css" />
+    <link rel="stylesheet" href="./css/body.css" />
     <script src="./js/zipcode.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -54,88 +55,117 @@
     </header>
     <section class="section-main bg padding-y">
         <div class="container">
-            <h2 class="text-announced">
-                Anunciar
-            </h2>
-        </div>
-        <div class="container">
-            <form class="announced">
-                <div class="subject-box">
-                    <input type="text" class="subject" placeholder="Título*" list="historico"/>
-                    <datalist id="historico">
-                        <option value="Goku"></option>
-                    </datalist>
+            <div class="container shortcut">
+                <div class="speed-tall">
+                    <a href="index.html" class="sl-f desapego">
+                        Desapego
+                    </a>
+    
                 </div>
-                <div class="group-img">
-                    <div class="group-info">
-                        Foto Desapego
-                        <p class="info-group-img">
-                            Adicione a foto
-                        </p>
-                    </div>
-                    <di class="announced-img">
-                        <i class="fa fa-camera" aria-hidden="true"></i>
-                        <span class="box-main-text"> Adicionar foto</span>
-                        <span class="box-info-text"> JPG, GIF e PNG somente</span>
-                    </di>
-                    <div class="group-info">
-                        Fotos Interesse
-                        <p class="info-group-img">
-                            Adicione até
-                            <span class="span-title-number"> 6 fotos</span>
-                        </p>
-                    </div>
-                    <di class="announced-img">
-                        <i class="fa fa-camera" aria-hidden="true"></i>
-                        <span class="box-main-text"> Adicionar foto</span>
-                        <span class="box-info-text"> JPG, GIF e PNG somente</span>
-                    </di>
+                <div class="speed-tall anunciar-int">
+                    <a href="./anunciar.html" class="sl-f anunciar">
+                        Anunciar
+                    </a>
                 </div>
-                <div class="location-container">
-                    <div class="location-container-title">
-                        Localização
+                <div class="speed-tall">
+                    <a href="..." class="sl-f filtrar">
+                        Filtrar
+                    </a>
+                </div>
+                <div class="speed-tall">
+                    <a href="..." class="sl-f interesses">
+                        Interesses
+                    </a>
+                </div>
+                <div class="speed-tall">
+                    <a href="..." class="sl-f avalicoes">
+                        Avaliações
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <a href="./anunciar.html" class="padding-des">
+                    Anunciar
+                </a>
+            </div>
+            <div class="container">
+                <form class="announced">
+                    <div class="subject-box">
+                        <input type="text" class="subject" placeholder="Título*" list="historico" />
+                        <datalist id="historico">
+                            <option value="Goku"></option>
+                        </datalist>
                     </div>
-                    <div class="custom-textfield-group" id="group-zipcode">
-                        <input class="subject" id="zipcode" name="zipcode" type="text" value="" maxlength="9"
-                            placeholder="CEP*" onblur="pesquisacep(this.value);">
-                        <di id="zipcodeAddressBox" class="zipcode-address-box">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <a class="zipcode-address" id="zipcodeAddress"></a>
+                    <div class="group-img">
+                        <div class="group-info">
+                            Foto Desapego
+                            <p class="info-group-img">
+                                Adicione a foto
+                            </p>
+                        </div>
+                        <di class="announced-img">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            <span class="box-main-text"> Adicionar foto</span>
+                            <span class="box-info-text"> JPG, GIF e PNG somente</span>
+                        </di>
+                        <div class="group-info">
+                            Fotos Interesse
+                            <p class="info-group-img">
+                                Adicione até
+                                <span class="span-title-number"> 6 fotos</span>
+                            </p>
+                        </div>
+                        <di class="announced-img">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            <span class="box-main-text"> Adicionar foto</span>
+                            <span class="box-info-text"> JPG, GIF e PNG somente</span>
                         </di>
                     </div>
-                </div>
-                <div class="location-container">
-                    <div class="location-container-title">
-                        Contato
+                    <div class="location-container">
+                        <div class="location-container-title">
+                            Localização
+                        </div>
+                        <div class="custom-textfield-group" id="group-zipcode">
+                            <input class="subject" id="zipcode" name="zipcode" type="text" value="" maxlength="9"
+                                placeholder="CEP*" onblur="pesquisacep(this.value);">
+                            <di id="zipcodeAddressBox" class="zipcode-address-box">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <a class="zipcode-address" id="zipcodeAddress"></a>
+                            </di>
+                        </div>
                     </div>
-                    <div class="custom-textfield-group">
-                        <input class="subject" placeholder="Tel*">
+                    <div class="location-container">
+                        <div class="location-container-title">
+                            Contato
+                        </div>
+                        <div class="custom-textfield-group">
+                            <input class="subject" placeholder="Tel*">
+                        </div>
                     </div>
-                </div>
-                <div class="info-mandatory-box">
-                    <span class="info-mandatory">
-                        As informações com (*) são obrigaórias
+                    <div class="info-mandatory-box">
+                        <span class="info-mandatory">
+                            As informações com (*) são obrigaórias
+                        </span>
+                    </div>
+                </form>
+                <di class="announced-send-box">
+                    <span class="announced-send-info">
+                        Ao publicar você concorda e aceita nossos
+                        <a class="term-link" href="...">
+                            Termos de Uso
+                        </a>
+                        e
+                        <a class="term-link" href="...">
+                            Privacidade
+                        </a>
                     </span>
-                </div>
-            </form>
-            <di class="announced-send-box">
-                <span class="announced-send-info">
-                    Ao publicar você concorda e aceita nossos
-                    <a class="term-link" href="...">
-                        Termos de Uso
-                    </a>
-                    e
-                    <a class="term-link" href="...">
-                        Privacidade
-                    </a>
-                </span>
-                <div class="announced-send-button">
-                    <button class="announced-submit">
-                        Enviar anúncio
-                    </button>
-                </div>
-            </di>
-        </div>
+                    <div class="announced-send-button">
+                        <button class="announced-submit">
+                            Enviar anúncio
+                        </button>
+                    </div>
+                </di>
+            </div>
     </section>
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
